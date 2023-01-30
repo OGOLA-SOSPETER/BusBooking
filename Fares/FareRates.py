@@ -1,5 +1,5 @@
 from Routes.BusData import DataBase
-from Buses.Buses import Buses
+from BusesData.Buses import Buses
 import datetime
 
 class Fare(Buses,DataBase):
@@ -8,8 +8,7 @@ class Fare(Buses,DataBase):
         self.fare = []
 
     @staticmethod
-    def morning_fare():
-
+    def getFare():
         if datetime.datetime.now().replace(hour=23, minute=0,second=0) > datetime.datetime.now() < datetime.datetime.now().replace(hour=4,minute=29,second=0):
             print('CLOSED!!\\nWe open at 4:30am')
 
@@ -22,8 +21,6 @@ class Fare(Buses,DataBase):
             print(fare)
             return fare
 
-    @staticmethod
-    def evening_fare():
         if datetime.datetime.now() > datetime.datetime.now().replace(hour=12,minute=0,second=0):
             fare = 'Khs.', 80
             print(fare)

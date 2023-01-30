@@ -3,9 +3,9 @@ from Routes.BusData import DataBase
 class Buses(DataBase):
     def __init__(self):
         super().__init__()
-        self.bus_number = []
-        self.driver_name = []
-        self.licence = []
+        self.bus_number = ['KCM345T']
+        self.driver_name = ['Moses Etl']
+        self.licence = ['MKL89Y']
     def busDetails(self):
         #getting the bus details
 
@@ -32,9 +32,11 @@ class Buses(DataBase):
             print('Driver Name: ', self.driver_name[a])
             print('Licence Number: ', self.licence[a])
             print('\n','#' * 30)
-
-Details = Buses()
+"""
+Details = BusesData()
 Details.busDetails()
 Details.driver_Details()
 
 Details.show_register()
+"""
+
