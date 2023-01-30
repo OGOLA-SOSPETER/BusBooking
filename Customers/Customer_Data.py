@@ -51,8 +51,8 @@ class Customer(Fare,Buses):
 
 
 Customer1 = Customer()
-#Customer1.busDetails()
-#Customer1.driver_Details()
-#Customer1.show_register()
+Customer1.busDetails()
+Customer1.driver_Details()
+Customer1.show_register()
 Customer1.CustDetails()
 Customer1.Display()
